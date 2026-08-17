@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+.bg-conic-score {
+  background: conic-gradient(#059669 0 84%, #e2e8f0 84% 100%);
+}
+
+@media print {
+  aside,
+  header,
+  button {
+    display: none !important;
+  }
+
+  main {
+    margin-left: 0 !important;
+  }
+}
